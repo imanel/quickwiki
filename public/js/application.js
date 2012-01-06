@@ -14,6 +14,13 @@ $(document).ready(function() {
     if(query != '') {
       $('#result').addClass('blank');
       $.get(apiURL + encodeURI(query), function(data) {
+        if(typeof data != 'object') {
+          try {
+            data = JSON.parse(data);
+          } catch(e) {
+            data = {};
+          }
+        }
         if(data.result == 'text') {
           showResult(data.data);
         } else {
