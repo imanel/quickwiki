@@ -2,10 +2,15 @@ body {
   background: url(/images/background.jpg);
 }
 
+#wrapper {
+  width: 345px;
+  margin: 100px auto 30px;
+}
+
 header h1 {
-  font: 100px/170px 'MisoRegular', Arial, sans-serif;
+  font: 100px/0px 'MisoRegular', Arial, sans-serif;
   letter-spacing: 3px;
-  margin: 30px 0;
+  margin: 0;
   padding: 0;
   text-align: center;
   color: white;
@@ -17,7 +22,7 @@ article #search_form {
 }
 
 article #search_form input[type=text] {
-  width: 330px;
+  width: 335px;
   height: 28px;
   padding: 0 5px;
   font: 12px Arial, sans-serif;
@@ -28,10 +33,27 @@ article #search_form input[type=text] {
   border-radius: 4px;
   box-shadow:inset 0 0 1px #000000;
   outline: 0;
+  margin: 100px 0 30px;
 }
 
 article #search_form input[type=submit] {
   display: none;
+}
+
+article #result {
+  font: 16px 'MisoRegular', Arial, sans-serif;
+  color: white;
+  line-height: 120%;
+  letter-spacing: 2px;
+  text-align: justify;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+}
+
+article #result.blank {
+  opacity: 0;
 }
 
 @font-face {
