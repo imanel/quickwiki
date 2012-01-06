@@ -56,6 +56,27 @@ article #result.blank {
   opacity: 0;
 }
 
+article #result ul {
+  margin: 0;
+  padding-left: 1em;
+}
+
+article #result ul li {
+/*  list-style-type: none;*/
+  padding-top: 10px;
+  font-size: 8px;
+}
+
+article #result ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+article #result ul li a:hover {
+  text-decoration: underline;
+}
+
 @font-face {
     font-family: 'MisoLight';
     src: url('miso-light-webfont.eot');
