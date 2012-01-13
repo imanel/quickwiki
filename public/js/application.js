@@ -36,6 +36,9 @@ $(document).ready(function() {
           case 'missing':
             showResult(data.data);
             break;
+          case 'invalid':
+            showResult(data.data);
+            break;
           case 'error':
             showResult(data.data);
             break;
